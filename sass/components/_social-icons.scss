@@ -1,0 +1,54 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+
+  &__item:first-child {
+    margin-left: 0;
+  }
+
+  &__item {
+    margin-left: 10px;
+  }
+
+  &__ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background-color: $social-icons-ellipse-background-color;
+    transition: background-color, $anim-duration $anim-function;
+  }
+
+  &__ellipse--grey {
+    background-color: $social-icons-ellipse-background-color-grey;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: $svg-icon-background-color;
+    transition: fill, $anim-duration $anim-function;
+  }
+
+  &__icon--white {
+    fill: $social-icons-ellipse-text-color-white;
+  }
+
+}
+
+// Hover
+.social-icons {
+  &__ellipse:hover {
+    background-color: $accent-color;
+  }
+
+  &__ellipse:hover &__icon {
+    fill: $social-icons-ellipse-background-color;
+  }
+}

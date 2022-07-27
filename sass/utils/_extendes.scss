@@ -1,0 +1,31 @@
+%header-link-paddings {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+%top-bottom-shifting-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%title-section {
+  padding-bottom: 50px;
+  font-weight: $font-weight-2;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color-secondary;
+}
+
+%footer-section-title {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $font-weight-2;
+  font-size: $font-size-default;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color-third;
+}

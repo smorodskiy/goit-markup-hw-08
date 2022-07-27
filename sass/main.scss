@@ -1,0 +1,35 @@
+// Utils
+@import "utils/variables.scss";
+@import "utils/extendes.scss";
+@import "utils/utils.scss";
+
+// Base
+@import "base/common";
+@import "base/reset";
+
+// Common comps
+@import "components/logo";
+@import "components/navigation";
+@import "components/contacts";
+@import "components/address";
+@import "components/subscribe-section";
+@import "components/btn";
+@import "components/social-icons";
+
+// Layouts
+@import "layouts/page-header";
+@import "layouts/footer";
+
+// Index
+@import "pages/index/components/order-section";
+@import "pages/index/components/quality-section";
+@import "pages/index/components/ourskills-section";
+@import "pages/index/components/team-section";
+@import "pages/index/components/best-clients-section";
+@import "pages/index/components/modal-feedback";
+@import "pages/index/components/card";
+
+// Portfolio
+@import "pages/portfolio/components/portfolio-section";
+@import "pages/portfolio/components/filter";
+@import "pages/portfolio/components/templations";

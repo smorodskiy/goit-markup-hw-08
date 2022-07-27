@@ -1,0 +1,75 @@
+/* Заказ услуг */
+.order-section {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $background-color-page-secondary;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/bg_hero.jpg);
+
+  &__title {
+    font-weight: $font-weight-3;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $order-title-text-color;
+  }
+
+  & span {
+    position: absolute;
+    left: calc((var(--n) - 1) * 25%);
+
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: $order-btn-background-color-span-hover;
+
+    transform: translateY(100%);
+    transition: $anim-duration;
+    transition-timing-function: $anim-function;
+    transition-delay: calc((var(--n) - 1) * 0.05s);
+    z-index: -1;
+  }
+
+  & span:nth-child(1) {
+    --n: 1;
+  }
+
+  & span:nth-child(2) {
+    --n: 2;
+  }
+
+  & span:nth-child(3) {
+    --n: 3;
+  }
+
+  & span:nth-child(4) {
+    --n: 4;
+  }
+}
+
+.btn--order-section {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  overflow: hidden;
+  z-index: 1;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:hover span {
+    transform: translateY(0) scale(2);
+  }
+}

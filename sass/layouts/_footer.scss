@@ -1,0 +1,19 @@
+/*  ----------  Футер  --------------  */
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color-page-secondary;
+
+  &__container {
+    display: flex;
+  }
+
+  &__social-wrapper {
+    margin-left: 70px;
+  }
+
+  &__social-wrapper-title {
+    @extend %footer-section-title;
+  }
+}

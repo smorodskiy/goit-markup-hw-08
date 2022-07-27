@@ -1,0 +1,74 @@
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__pages {
+    display: flex;
+    margin-left: 93px;
+    /* dub */
+    font-weight: $font-weight-1;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-color-secondary;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__link {
+    @extend %header-link-paddings;
+    position: relative;
+    display: inline-block;
+    color: $text-color-secondary;
+  }
+
+  &__link--active-page {
+    color: $accent-color;
+  }
+
+  &__link--active-page::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    content: "";
+  }
+}
+
+// ------ Hover
+.navigation__link--hover {
+  &::before,
+  &::after {
+    position: absolute;
+
+    left: 50%;
+    width: 0;
+    border-radius: 2px;
+    background-color: $accent-color;
+    color: transparent;
+
+    transition: width $anim-duration $anim-function 0s, left $anim-duration $anim-function 0s;
+    content: "";
+  }
+
+  &::after {
+    bottom: 0;
+    height: 4px;
+  }
+
+  &::before {
+    top: 35%;
+    height: 25px;
+    mix-blend-mode: screen;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    left: 0;
+    width: 100%;
+  }
+}

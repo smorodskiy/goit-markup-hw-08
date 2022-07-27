@@ -1,0 +1,222 @@
+/* ---------- Модальное окно Заказать услугу ------------ */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $modal-bg-color;
+  z-index: 100;
+  transition: opacity 0.25s, visibility 0.25s;
+
+  &__window {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px $modal-bg-color;
+    border-radius: 4px;
+    background-color: $background-color-page-primary;
+  }
+
+  &__close-icon {
+    position: absolute;
+    right: 0;
+    margin: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background: $background-color-page-primary;
+    transition: fill $anim-duration $anim-function;
+    cursor: pointer;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px;
+  }
+
+  &__form-title {
+    margin-bottom: 12px;
+    font-weight: $font-weight-2;
+    font-size: $modal-form-title-text-size;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $text-color-secondary;
+  }
+
+  &__input-box {
+    position: relative;
+    font-size: $font-size-0;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+  &__input-label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  &__input {
+    box-sizing: border-box;
+    padding-left: 40px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid $modal-input-border-color;
+    border-radius: 4px;
+    outline: none;
+    transition: border $anim-duration $anim-function;
+  }
+  &__input-icon {
+    position: absolute;
+    top: 58%;
+    /* transform: translateY(-50%); */
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    transition: fill $anim-duration $anim-function;
+    pointer-events: none;
+  }
+
+  &__comment-area {
+    width: 100%;
+    padding: 12px;
+    height: 120px;
+    resize: none;
+    border: 1px solid $modal-comment-area-border-color;
+    border-radius: 4px;
+    font-size: $font-size-default;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    box-sizing: border-box;
+    outline: none;
+    transition: border $anim-duration $anim-function;
+  }
+
+  &__checkbox-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__checkbox-native {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &__checkbox-icon-custom {
+    position: relative;
+    display: inline-block;
+    width: $modal-policy-icon-w;
+    height: $modal-policy-icon-h;
+    border: 2px solid $checkbox-icon-custom-border-color;
+    border-radius: 2px;
+    box-sizing: border-box;
+    fill: transparent;
+  }
+
+  &__checkbox-icon {
+    position: absolute;
+    display: block;
+    top: -2px;
+    left: -2px;
+    width: $modal-policy-icon-w;
+    height: $modal-policy-icon-h;
+  }
+
+  &__checkbox-agree-contract {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+
+  &__comment-area::placeholder {
+    color: $modal-comment-area-placeholder-color;
+  }
+
+  &__btn {
+    margin: 30px auto 0;
+    background: $accent-color;
+    border-radius: 4px;
+    border: none;
+    transition: box-shadow $anim-duration $anim-function;
+  }
+}
+
+
+// Hover
+.modal {
+  // Close icon hover
+  &__close-icon:hover {
+    fill: $accent-color;
+  }
+
+  // Accent border for inputs
+  &__input-box &__input:focus,
+  &__input-box &__input:hover {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+
+  // Accent for inputs icons
+  &__input-box &__input:hover + &__input-icon {
+    fill: $accent-color;
+  }
+
+  // Validation(invalid)
+  &__input:invalid {
+    border: 2px solid $invalid-color;
+  }
+
+  // Accent border for textarea(Comment section)
+  &__comment-area:focus,
+  &__comment-area:hover {
+    border: 1px solid $accent-color;
+  }
+
+  // Checkbox outline focus
+  &__checkbox-native:focus + &__checkbox-icon-custom::before {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: $modal-policy-icon-w;
+    height: $modal-policy-icon-h;
+    border: 2px solid $modal-checkbox-outline-color;
+    border-radius: 2px;
+    content: "";
+  }
+
+  // Style checkbox for checked state 
+  &__checkbox-native:checked + &__checkbox-icon-custom {
+    border: 2px solid transparent;
+  }
+
+  // Style checkbox icon for checked state
+  &__checkbox-native:checked + &__checkbox-icon-custom > &__checkbox-icon {
+    fill: $accent-color;
+  }
+
+  // Style checkbox for disabled state
+  &__checkbox-native:disabled + &__checkbox-icon-custom {
+    border: 2px solid gray;
+  }
+
+  // Style checkbox for checked+disabled state
+  &__checkbox-native:disabled:checked + &__checkbox-icon-custom {
+    opacity: 0.5;
+  }
+
+  // Button hover
+  &__btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

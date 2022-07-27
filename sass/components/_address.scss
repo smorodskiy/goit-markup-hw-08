@@ -1,0 +1,31 @@
+.address {
+  &__list {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &__item {
+    padding-top: 9px;
+  }
+
+  &__item:first-child {
+    padding-top: 20px;
+  }
+
+  &__link {
+    color: $address-link-color;
+    transition: color $anim-duration $anim-function;
+  }
+
+  &__link--white {
+    color: $address-link-color-secondary;
+  }
+}
+
+// Hover
+.address {
+  &__link:focus,
+  &__link:hover {
+    color: $accent-color;
+  }
+}

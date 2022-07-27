@@ -1,0 +1,82 @@
+/* --- Templations --- */
+.template-section {
+  &__list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 15px;
+    max-width: 370px;
+    box-sizing: border-box;
+    background: $template-item-background-color;
+  }
+
+  &__link {
+    line-height: 0;
+    color: inherit;
+    transition: box-shadow $anim-duration $anim-function;
+    cursor: pointer;
+  }
+
+  &__header {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__picture {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__text-float {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    padding: 63px 24px;
+    font-size: $font-size-3;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    background-color: $accent-color;
+    color: $text-color-third;
+    transition: top $anim-duration $anim-function;
+  }
+
+  &__footer {
+    padding: 20px 24px;
+    border: 1px solid $template-item-border-color;
+  }
+
+  &__footer-title {
+    font-weight: $font-weight-2;
+    font-size: $font-size-3;
+    letter-spacing: 0.06em;
+    color: $text-color-secondary;
+  }
+
+  &__footer-text {
+    font-size: $font-size-2;
+    letter-spacing: 0.03em;
+  }
+
+  &__footer-title,
+  &__footer-text {
+    line-height: 2;
+  }
+}
+
+// Hover
+.template-section {
+  &__link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__link:hover &__text-float {
+    top: 0;
+    display: block;
+  }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="page">
+    <!-- Шапка -->
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="navigation">
+          <div class="logo">
+            <a class="logo__link" href="/"
+              ><span class="logo__first-text-part">
+                Web<span class="logo__second-text-part">Studio</span>
+              </span></a
+            >
+          </div>
+
+          <ul class="navigation__pages">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--hover" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active-page" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--hover" href="./contacts.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@example.com">
+              <svg class="contacts__icon contacts__icon--email">
+                <use xlink:href="./images/icons.svg#icon-letter"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:380961111111">
+              <svg class="contacts__icon contacts__icon--tel">
+                <use xlink:href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 099 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-portfolio">
+        <div class="container page-portfolio__container">
+          <h1 class="page-portfolio__title is-hidden">Страница с шаблонами</h1>
+
+          <!-- Фильтр -->
+          <div class="filter">
+            <h2 class="filter__title is-hidden">Фильтр</h2>
+
+            <ul class="filter__list">
+              <li class="filter__item">
+                <button
+                  class="btn filter__btn filter__btn--active angleinleft bouncein"
+                  type="button"
+                >
+                  Все
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="btn filter__btn angleinleft bouncein" type="button">
+                  Веб-сайты
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="btn filter__btn angleinleft bouncein" type="button">
+                  Приложения
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="btn filter__btn angleinleft bouncein" type="button">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button class="btn filter__btn angleinleft bouncein" type="button">
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Шаблоны -->
+          <section class="template-section">
+            <h2 class="template-section__title is-hidden">Примеры шаблонов сайтов</h2>
+            <ul class="template-section__list">
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture" src="./images/template1.jpg" alt="Шаблон Технокряк" width="370" />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Технокряк</h3>
+                    <p class="template-section__footer-text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture"
+                      src="./images/template2.jpg"
+                      alt="Шаблон Постер New Orlean vs Golden Star"
+                      width="370"
+                    />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Постер New Orlean vs Golden Star</h3>
+                    <p class="template-section__footer-text">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture" src="./images/template3.jpg" alt="Шаблон Ресторан Seafood" width="370" />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Ресторан Seafood</h3>
+                    <p class="template-section__footer-text">Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture" src="./images/template4.jpg" alt="Шаблон Проект Prime" width="370" />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Проект Prime</h3>
+                    <p class="template-section__footer-text">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture" src="./images/template5.jpg" alt="Шаблон Проект Boxes" width="370" />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Проект Boxes</h3>
+                    <p class="template-section__footer-text">Приложение</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture"
+                      src="./images/template6.jpg"
+                      alt="Шаблон Inspiration has no Borders"
+                      width="370"
+                    />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Inspiration has no Borders</h3>
+                    <p class="template-section__footer-text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture"
+                      src="./images/template7.jpg"
+                      alt="Шаблон Издание Limited Edition"
+                      width="370"
+                    />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Издание Limited Edition</h3>
+                    <p class="template-section__footer-text">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture" src="./images/template8.jpg" alt="Шаблон Проект LAB" width="370" />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Проект LAB</h3>
+                    <p class="template-section__footer-text">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="template-section__item">
+                <a href="#" class="template-section__link">
+                  <div class="template-section__header">
+                    <img class="template-section__picture" src="./images/template9.jpg" alt="Шаблон Growing Business" width="370" />
+                    <p class="template-section__text-float">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                  <div class="template-section__footer">
+                    <h3 class="template-section__footer-title">Growing Business</h3>
+                    <p class="template-section__footer-text">Приложение</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- </div> -->
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div class="page-footer__address-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="logo__link logo__link--reset-padding" href="/"
+              ><span class="logo__first-text-part">
+                Web<span class="logo__second-text-part logo__second-text-part--white">Studio</span>
+              </span></a
+            >
+          </div>
+
+          <!-- Блок с адресом -->
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link address__link--white"
+                  href="https://www.google.com.ua/maps/@50.4863234,30.4790756,13z?hl=ru"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="tel:380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Social icons -->
+        <div class="page-footer__social-wrapper">
+          <h2 class="page-footer__social-wrapper-title">присоединяйтесь</h2>
+
+          <ul class="social-icons">
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://instagram.com/smorodsky">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://twitter.com/smorodskiy">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://facebook.com/smorodsky">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://linkedin.com/in/igor-smorodskiy">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="subscribe-section">
+          <form action="#">
+            <h2 class="subscribe-section__title">Подпишитесь на рассылку</h2>
+            <input
+              class="subscribe-section__input"
+              type="email"
+              name="email"
+              placeholder="E-Mail"
+            />
+            <button class="btn subscribe-section__btn" type="submit">
+              Подписаться<svg class="subscribe-section__icon">
+                <use xlink:href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

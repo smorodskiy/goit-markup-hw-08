@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="page">
+    
+    <!-- Шапка -->
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="navigation">
+          
+          <!-- Logo -->
+          <div class="logo">
+            <a class="logo__link" href="/"
+              ><span class="logo__first-text-part">
+                Web<span class="logo__second-text-part">Studio</span>
+              </span></a
+            >
+          </div>
+
+          <!-- Navigation -->
+          <ul class="navigation__pages">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active-page" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--hover" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--hover" href="./contacts.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contacts -->
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@example.com">
+              <svg class="contacts__icon contacts__icon--email">
+                <use xlink:href="./images/icons.svg#icon-letter"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:380961111111">
+              <svg class="contacts__icon contacts__icon--tel">
+                <use xlink:href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 099 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-main">
+        
+        <!-- Main title -->
+        <h1 class="page-main__title is-hidden">Веб-студия по разработке сайтов</h1>
+
+        <!-- Заказать услугу -->
+        <section class="order-section">
+          <h2 class="order-section__title">Эффективные решения<br />для вашего бизнеса</h2>
+          <button class="btn btn--order-section" type="button" data-modal-open>
+            Заказать услугу <span></span><span></span><span></span><span></span>
+          </button>
+        </section>
+
+        <!-- Особенности -->
+        <section class="quality-section">
+          <div class="container quality-section__container">
+            <h2 class="quality-section__title is-hidden">Особенности</h2>
+
+            <ul class="quality-section__list">
+              <li class="quality-section__item">
+                <div class="quality-section__icon-wrapper">
+                  <svg class="quality-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="quality-section__item-title">Внимание к деталям</h3>
+                <p class="quality-section__text">
+                  Идейные соображения, а также начало повседневной работы по формированию позиции.
+                </p>
+              </li>
+
+              <li class="quality-section__item">
+                <div class="quality-section__icon-wrapper">
+                  <svg class="quality-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <h3 class="quality-section__item-title">Пунктуальность</h3>
+                <p class="quality-section__text">
+                  Задача организации, в особенности же рамки и место обучения кадров влечет за
+                  собой.
+                </p>
+              </li>
+
+              <li class="quality-section__item">
+                <div class="quality-section__icon-wrapper">
+                  <svg class="quality-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="quality-section__item-title">Планирование</h3>
+                <p class="quality-section__text">
+                  Равным образом консультация с широким активом в значительной степени
+                  обуславливает.
+                </p>
+              </li>
+
+              <li class="quality-section__item">
+                <div class="quality-section__icon-wrapper">
+                  <svg class="quality-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="quality-section__item-title">Современные технологии</h3>
+                <p class="quality-section__text">
+                  Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Чем мы занимаемся -->
+        <section class="ourskills-section">
+          <div class="container ourskills-section__container">
+            <h2 class="ourskills-section__title">Чем мы занимаемся</h2>
+
+            <ul class="ourskills-section__list">
+              <li class="ourskills-section__item">
+                <img
+                  class="ourskills-section__picture"
+                  src="./images/wedo1.jpg"
+                  alt="Верстка"
+                  width="370"
+                />
+                <p class="ourskills-section__text">Десктопные приложения</p>
+              </li>
+              <li class="ourskills-section__item">
+                <img
+                  class="ourskills-section__picture"
+                  src="./images/wedo2.jpg"
+                  alt="Дизайн"
+                  width="370"
+                />
+                <p class="ourskills-section__text">Мобильные приложения</p>
+              </li>
+              <li class="ourskills-section__item">
+                <img
+                  class="ourskills-section__picture"
+                  src="./images/wedo3.jpg"
+                  alt="Стиль"
+                  width="370"
+                />
+                <p class="ourskills-section__text">Дизайнерские решения</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Наша команда -->
+        <section class="team-section">
+          <div class="container team-section__container">
+            
+            <!-- Team title -->
+            <h2 class="team-section__title">Наша команда</h2>
+
+            <!-- Team list -->
+            <ul class="team-section__list">
+              <li class="card">
+                <img
+                  class="card__picture"
+                  src="./images/team1.jpg"
+                  alt="Фотография сотрудника 1"
+                  width="270"
+                />
+                <div class="card__footer">
+                  <h3 class="card__name">Игорь Демьяненко</h3>
+                  <p class="card__text">Product Designer</p>
+
+                  <ul class="social-icons">
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://instagram.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://twitter.com/smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://facebook.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://linkedin.com/in/igor-smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="card">
+                <img
+                  class="card__picture"
+                  src="./images/team2.jpg"
+                  alt="Фотография сотрудника 2"
+                  width="270"
+                />
+                <div class="card__footer">
+                  <h3 class="card__name">Ольга Репина</h3>
+                  <p class="card__text">Frontend Developer</p>
+
+                  <ul class="social-icons">
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://instagram.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://twitter.com/smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://facebook.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://linkedin.com/in/igor-smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="card">
+                <img
+                  class="card__picture"
+                  src="./images/team3.jpg"
+                  alt="Фотография сотрудника 3"
+                  width="270"
+                />
+                <div class="card__footer">
+                  <h3 class="card__name">Николай Тарасов</h3>
+                  <p class="card__text">Marketing</p>
+
+                  <ul class="social-icons">
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://instagram.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://twitter.com/smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://facebook.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://linkedin.com/in/igor-smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="card">
+                <img
+                  class="card__picture"
+                  src="./images/team4.jpg"
+                  alt="Фотография сотрудника 4"
+                  width="270"
+                />
+                <div class="card__footer">
+                  <h3 class="card__name">Михаил Ермаков</h3>
+                  <p class="card__text">UI Designer</p>
+                  
+                  <!-- Social icons -->
+                  <ul class="social-icons">
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://instagram.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://twitter.com/smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://facebook.com/smorodsky">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="social-icons__item">
+                      <a class="social-icons__link" href="http://linkedin.com/in/igor-smorodskiy">
+                        <div class="social-icons__ellipse">
+                          <svg class="social-icons__icon">
+                            <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Постоянные клиенты -->
+        <section class="best-clients-section">
+          <div class="container best-clients-section__container">
+            <h2 class="best-clients-section__title">Постоянные клиенты</h2>
+
+            <ul class="best-clients-section__list">
+              <li class="best-clients-section__item">
+                <a href="#" class="best-clients-section__link">
+                  <svg class="best-clients-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-logo1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="best-clients-section__item">
+                <a href="#" class="best-clients-section__link">
+                  <svg class="best-clients-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-logo2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="best-clients-section__item">
+                <a href="#" class="best-clients-section__link">
+                  <svg class="best-clients-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-logo3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="best-clients-section__item">
+                <a href="#" class="best-clients-section__link">
+                  <svg class="best-clients-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-logo4"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="best-clients-section__item">
+                <a href="#" class="best-clients-section__link">
+                  <svg class="best-clients-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-logo5"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="best-clients-section__item">
+                <a href="#" class="best-clients-section__link">
+                  <svg class="best-clients-section__icon">
+                    <use xlink:href="./images/icons.svg#icon-logo6"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div class="page-footer__address-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a class="logo__link logo__link--reset-padding" href="/"
+              ><span class="logo__first-text-part">
+                Web<span class="logo__second-text-part logo__second-text-part--white">Studio</span>
+              </span></a
+            >
+          </div>
+
+          <!-- Блок с адресом -->
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link address__link--white"
+                  href="https://www.google.com.ua/maps/@50.4863234,30.4790756,13z?hl=ru"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="tel:380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Social icons -->
+        <div class="page-footer__social-wrapper">
+          <h2 class="page-footer__social-wrapper-title">присоединяйтесь</h2>
+
+          <ul class="social-icons">
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://instagram.com/smorodsky">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://twitter.com/smorodskiy">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://facebook.com/smorodsky">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="social-icons__item">
+              <a class="social-icons__link" href="http://linkedin.com/in/igor-smorodskiy">
+                <div class="social-icons__ellipse social-icons__ellipse--grey">
+                  <svg class="social-icons__icon social-icons__icon--white">
+                    <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Subscribe -->
+        <div class="subscribe-section">
+          <form action="#">
+            <h2 class="subscribe-section__title">Подпишитесь на рассылку</h2>
+            <input
+              class="subscribe-section__input"
+              type="email"
+              name="email"
+              placeholder="E-Mail"
+            />
+            <button class="btn subscribe-section__btn" type="submit">
+              Подписаться<svg class="subscribe-section__icon">
+                <use xlink:href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal window -->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal__window">
+        <!-- Close button -->
+        <svg class="modal__close-icon" data-modal-close>
+          <use xlink:href="./images/icons.svg#icon-close"></use>
+        </svg>
+
+        <!-- Submit form -->
+        <form class="modal__form" action="#">
+          <div class="modal__form-wrapper" role="group" aria-labelledby="modal__form-label">
+            <!-- Form title -->
+            <p id="modal__form-label" class="modal__form-title">
+              Оставьте свои данные, мы вам перезвоним
+            </p>
+
+            <!-- Name -->
+            <label class="modal__input-box">
+              <span class="modal__input-label">Имя</span>
+              <input class="modal__input" type="text" id="input-name" name="input-name" autofocus />
+              <svg class="modal__input-icon">
+                <use xlink:href="./images/icons.svg#icon-avatar"></use>
+              </svg>
+            </label>
+
+            <!-- Tel -->
+            <label class="modal__input-box">
+              <span class="modal__input-label">Телефон</span>
+              <input
+                class="modal__input"
+                type="tel"
+                id="input-tel"
+                name="input-tel"
+                pattern="\+[1-9]{1}[0-9]{3,14}"
+              />
+              <svg class="modal__input-icon">
+                <use xlink:href="./images/icons.svg#icon-mobile"></use>
+              </svg>
+            </label>
+
+            <!-- Email -->
+            <label class="modal__input-box">
+              <span class="modal__input-label">Почта</span>
+              <input class="modal__input" type="email" id="input-email" name="input-email" />
+              <svg class="modal__input-icon">
+                <use xlink:href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </label>
+
+            <!-- Comment -->
+            <label class="modal__input-box">
+              <span class="modal__input-label">Комментарий</span>
+              <textarea
+                class="modal__comment-area"
+                name="feedback-comment"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+
+            <!-- Checkbox -->
+            <label class="modal__checkbox-box">
+              <input class="modal__checkbox-native" type="checkbox" name="agree-policy" />
+
+              <!-- Checkbox icon -->
+              <span class="modal__checkbox-icon-custom">
+                <svg class="modal__checkbox-icon" data-modal-close>
+                  <use xlink:href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+
+              <!-- Checkbox text -->
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="modal__checkbox-agree-contract">Условия договора</a>
+            </label>
+
+            <!-- Send button -->
+            <button class="btn modal__btn" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal window for orders -->
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

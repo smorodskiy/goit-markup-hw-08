@@ -1,0 +1,47 @@
+.ourskills-section {
+  padding-top: 0;
+
+  &__container {
+    @extend %top-bottom-shifting-section;
+    // Null top from extented style
+    padding-top: 0;
+  }
+
+  &__title {
+    @extend %title-section;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__picture {
+    position: relative;
+    display: block;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: $font-weight-2;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $text-color-third;
+    background: $background-color-ourskills-text;
+  }
+}
