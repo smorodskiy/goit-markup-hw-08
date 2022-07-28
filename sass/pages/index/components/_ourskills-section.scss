@@ -9,7 +9,8 @@
   }
 
   &__title {
-    @extend %title-section;
+    // @extend %title-section;
+    @include title-section(30px, 28px);
   }
 
   &__list {

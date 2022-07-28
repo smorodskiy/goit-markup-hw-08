@@ -4,6 +4,7 @@
 @import "utils/variables-desktop";
 
 @import "utils/extendes.scss";
+@import "utils/mixins";
 @import "utils/utils.scss";
 @import "utils/include-media";
 
@@ -36,4 +37,4 @@
 // Portfolio
 @import "pages/portfolio/components/portfolio-section";
 @import "pages/portfolio/components/filter";
-@import "pages/portfolio/components/templations";
+@import "pages/portfolio/components/template-section";

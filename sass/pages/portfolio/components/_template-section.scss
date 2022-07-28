@@ -9,7 +9,8 @@
 
   &__item {
     margin: 15px;
-    max-width: 370px;
+    // max-width: 450px;
+    width: 100%;
     box-sizing: border-box;
     background: $template-item-background-color;
   }
@@ -28,7 +29,8 @@
 
   &__picture {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    // max-width: 100%;
     box-sizing: border-box;
   }
 
@@ -66,6 +68,18 @@
   &__footer-text {
     line-height: 2;
   }
+
+  @include media(">tablet") {
+    &__item {
+      // margin: 15px;
+      max-width: 354px;
+    }   
+  }
+
+  @include media(">desktop") {
+    
+  }
+
 }
 
 // Hover

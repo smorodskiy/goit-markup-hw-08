@@ -1,0 +1,14 @@
+@mixin header-link-paddings($pad) {
+  padding-top: $pad;
+  padding-bottom: $pad;
+}
+
+@mixin title-section($pt, $fz) {
+  padding-bottom: $pt;
+  font-size: $fz;
+  font-weight: $font-weight-2;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color-secondary;
+}

@@ -1,21 +1,6 @@
-%header-link-paddings {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 %top-bottom-shifting-section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-%title-section {
-  padding-bottom: 50px;
-  font-weight: $font-weight-2;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $text-color-secondary;
 }
 
 %footer-section-title {
@@ -35,6 +20,10 @@
 //     padding-top: 94px;
 //     padding-bottom: 94px;
 //   }
+
+// padding-bottom: 50px;
+// font-size: 36px;
+
 // }
 
 // @include media(">desktop") {

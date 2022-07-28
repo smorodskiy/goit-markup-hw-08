@@ -14,7 +14,7 @@
   }
 
   &__link {
-    @extend %header-link-paddings;    
+    @include header-link-paddings(21px);
     display: flex;
     align-items: center;
     color: $text-color-primary;
@@ -33,6 +33,22 @@
   &__icon--tel {
     width: 10px;
     height: 16px;
+  }
+
+  @include media(">tablet") {
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+      @include header-link-paddings(5px);
+    }
+  }
+
+  @include media(">desktop") {
+    flex-direction: row;
+    &__link {
+      @include header-link-paddings(32px);
+    }
   }
 }
 
@@ -80,11 +96,5 @@
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts {
-    display: flex;
   }
 }

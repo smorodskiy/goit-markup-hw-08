@@ -15,14 +15,10 @@
     height: 16px;
   }
 
-  @include media(">tablet") {    
+  @include media(">tablet", ">desktop") {    
     &__icon-menu {
       display: none;
     }
-  }
-
-  @include media(">desktop") {
-   
   }
 
 }

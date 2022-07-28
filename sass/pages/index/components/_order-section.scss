@@ -24,6 +24,7 @@
     color: $order-title-text-color;
   }
 
+  // Arising spans(Effect)
   & span {
     position: absolute;
     left: calc((var(--n) - 1) * 25%);
