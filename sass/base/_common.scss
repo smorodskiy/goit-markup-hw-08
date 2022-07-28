@@ -1,11 +1,21 @@
 // Main container
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   max-width: $container-max-width;
-  width: 100%;
+  // width: 100%;
+
+  @include media(">tablet") {    
+    max-width: $t-container-max-width;
+  }
+
+  @include media(">desktop") {
+    max-width: $d-container-max-width;
+  }
 }
 
 /* Общий стиль для странцы */

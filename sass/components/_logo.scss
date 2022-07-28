@@ -2,12 +2,13 @@
   font-family: "Raleway";
   // font-weight: $font-weight-2;
   font-size: $logo-font-size;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   &__link {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   &__link--reset-padding {
@@ -24,5 +25,14 @@
 
   &__second-text-part--white {
     color: $logo-second-text-part-color-footer;
+  }
+
+  @include media(">tablet") {    
+    font-size: $t-logo-font-size;
+    line-height: 1.19;
+  }
+  
+  @include media(">desktop") {
+    
   }
 }

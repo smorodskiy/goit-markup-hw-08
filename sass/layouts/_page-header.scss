@@ -1,13 +1,28 @@
 .page-header {
-  display: flex;
+  // display: flex;
   border-bottom: $navigation-border-color;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 
   &__container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
-}
+  &__icon-menu {
+    width: 24px;
+    height: 16px;
+  }
 
+  @include media(">tablet") {    
+    &__icon-menu {
+      display: none;
+    }
+  }
+
+  @include media(">desktop") {
+   
+  }
+
+}

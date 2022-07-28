@@ -1,113 +1,113 @@
-//------------------------------------------------ Global
+  //------------------------------------------------ Global
+  // Container
+  $container-max-width: 450px;
 
-// Container
-$container-max-width: 1200px;
+  // Fonts
+  $font-size-0: 12px;
+  $font-size-default: 14px;
+  $font-size-2: 16px;
+  $font-size-3: 18px;
 
-// Fonts
-$font-size-0: 12px;
-$font-size-default: 14px;
-$font-size-2: 16px;
-$font-size-3: 18px;
+  $font-weight-default: 400;
+  $font-weight-1: 500;
+  $font-weight-2: 700;
+  $font-weight-3: 900;
 
-$font-weight-default: 400;
-$font-weight-1: 500;
-$font-weight-2: 700;
-$font-weight-3: 900;
+  // Text color
+  $text-color-primary: #757575;
+  $text-color-secondary: #212121;
+  $text-color-third: #fff;
+  $font-family: Roboto, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
 
-// Text color
-$text-color-primary: #757575;
-$text-color-secondary: #212121;
-$text-color-third: #fff;
-$font-family: Roboto, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
-  Geneva, Verdana, sans-serif;
+  // Background colors
+  $background-color-page-primary: #fff;
+  $background-color-page-secondary: #2f303a;
 
-// Background colors
-$background-color-page-primary: #fff;
-$background-color-page-secondary: #2f303a;
+  // SVG background colors
+  $svg-icon-background-color: #afb1b8;
 
-// SVG background colors
-$svg-icon-background-color: #afb1b8;
+  // ------------------------------------------------ Components
 
-// ------------------------------------------------ Components
+  // Button
+  $btn-text-color: #fff;
+  $btn-background-color: #2196f3;
+  $btn-background-color-hover: #2196f3c8;
 
-// Button
-$btn-text-color: #fff;
-$btn-background-color: #2196f3;
-$btn-background-color-hover: #2196f3c8;
+  // Card
+  $card-background-color: #fff;
 
-// Card
-$card-background-color: #fff;
+  // Social icons
+  $social-icons-ellipse-background-color: #fff;
+  $social-icons-ellipse-background-color-grey: rgba(255, 255, 255, 0.1);
+  $social-icons-ellipse-text-color-white: #fff;
 
-// Social icons
-$social-icons-ellipse-background-color: #fff;
-$social-icons-ellipse-background-color-grey: rgba(255, 255, 255, 0.1);
-$social-icons-ellipse-text-color-white: #fff;
+  // Validation colors
+  $invalid-color: #f00;
 
-// Validation colors
-$invalid-color: #f00;
+  // ------------------------------------------------ Modules
+  // Logo
+  $logo-second-text-part-color-header: #000;
+  $logo-font-size: 24px;
 
-// ------------------------------------------------ Modules
-// Logo
-$logo-second-text-part-color-header: #000;
-$logo-font-size: 26px;
+  // Logo footer
+  $logo-second-text-part-color-footer: #fff;
 
-// Logo footer
-$logo-second-text-part-color-footer: #fff;
+  // Navigation
+  $navigation-border-color: #ececec;
 
-// Navigation
-$navigation-border-color: #ececec;
+  // Order section
+  $order-title-text-color: #fff;
+  $order-btn-background-color-span-hover: #0372f1;
 
-// Order section
-$order-title-text-color: #fff;
-$order-btn-background-color-span-hover: #0372f1;
+  // Quality section
+  $background-color-icon-wrapper: #f5f4fa;
 
-// Quality section
-$background-color-icon-wrapper: #f5f4fa;
+  // Ourskills section
+  $background-color-ourskills-text: #2f303acc;
 
-// Ourskills section
-$background-color-ourskills-text: #2f303acc;
+  // Team section
+  // $address-text-color-footer: #fff;
+  $background-color-team-section: #f5f4fa;
 
-// Team section
-// $address-text-color-footer: #fff;
-$background-color-team-section: #f5f4fa;
+  // Best Clients section
+  $best-cliets-section-primary-color: #afb1b8;
 
-// Best Clients section
-$best-cliets-section-primary-color: #afb1b8;
+  // Footer
+  $address-link-color: rgba(255, 255, 255, 0.6);
+  $address-link-color-secondary: #fff;
+  $subscribe-section-input-color: rgba(255, 255, 255, 0.6);
+  $subscribe-section-input-border-color: rgba(255, 255, 255, 0.3);
+  $subscribe-section-icon-color: #fff;
 
-// Footer
-$address-link-color: rgba(255, 255, 255, 0.6);
-$address-link-color-secondary: #fff;
-$subscribe-section-input-color: rgba(255, 255, 255, 0.6);
-$subscribe-section-input-border-color: rgba(255, 255, 255, 0.3);
-$subscribe-section-icon-color: #fff;
+  // Modal-order
+  $modal-form-title-text-size: 20px;
+  $modal-bg-color: rgba(0, 0, 0, 0.2);
+  $modal-input-border-color: rgba(33, 33, 33, 0.2);
+  $modal-comment-area-border-color: rgba(33, 33, 33, 0.2);
+  $modal-comment-area-placeholder-color: rgba(117, 117, 117, 0.5);
+  $modal-checkbox-outline-color: rgba(255, 99, 71, 0.5);
+  $checkbox-icon-custom-border-color: #000;
+  $modal-policy-icon-h: 15px;
+  $modal-policy-icon-w: 16px;
 
-// Modal-order
-$modal-form-title-text-size: 20px;
-$modal-bg-color: rgba(0, 0, 0, 0.2);
-$modal-input-border-color: rgba(33, 33, 33, 0.2);
-$modal-comment-area-border-color: rgba(33, 33, 33, 0.2);
-$modal-comment-area-placeholder-color: rgba(117, 117, 117, 0.5);
-$modal-checkbox-outline-color: rgba(255, 99, 71, 0.5);
-$checkbox-icon-custom-border-color: #000;
-$modal-policy-icon-h: 15px;
-$modal-policy-icon-w: 16px;
+  // ------------------------------------------------ Portfolio //////////
+  // Filter section
+  $filter-btn-text-color: #000;
+  $filter-btn-text-color-active: #fff;
+  $filter-btn-bg-color: #f5f4fa;
 
-// ------------------------------------------------ Portfolio //////////
-// Filter section
-$filter-btn-text-color: #000;
-$filter-btn-text-color-active: #fff;
-$filter-btn-bg-color: #f5f4fa;
+  // Templations section
+  $template-item-background-color: #fff;
+  $template-item-border-color: #eee;
+  $template-item-desc-text-color: rgba(33, 150, 243, 0.9);
+  // ------------------------------------------------ Portfolio //////////
 
-// Templations section
-$template-item-background-color: #fff;
-$template-item-border-color: #eee;
-$template-item-desc-text-color: rgba(33, 150, 243, 0.9);
-// ------------------------------------------------ Portfolio //////////
+  /* Animation */
+  $anim-duration: 0.25s;
+  $anim-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // Accent
+  $accent-color: #2196f3;
 
 
-/* Animation */
-$anim-duration: 0.25s;
-$anim-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-// Accent
-$accent-color: #2196f3;

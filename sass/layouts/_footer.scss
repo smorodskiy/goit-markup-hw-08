@@ -7,13 +7,27 @@
 
   &__container {
     display: flex;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   &__social-wrapper {
-    margin-left: 70px;
+    // margin-left: 70px;
   }
 
   &__social-wrapper-title {
     @extend %footer-section-title;
+  }
+
+  @include media(">tablet") {
+    display: flex;
+  }
+
+  @include media(">desktop") {
+    &__social-wrapper {
+      margin-left: 70px;
+    }
   }
 }

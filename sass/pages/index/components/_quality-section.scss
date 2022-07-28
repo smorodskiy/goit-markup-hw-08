@@ -1,7 +1,6 @@
 /* -- Особенности -- */
 
 .quality-section {
-  
   &__container {
     @extend %top-bottom-shifting-section;
   }
@@ -10,24 +9,22 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 
   &__item:first-child {
-    margin-left: 0;
+    margin-top: 0;
   }
 
   &__item {
-    margin-left: 30px;
-    width: 270px;
+    margin-top: 30px;
   }
 
   &__icon-wrapper {
-    height: 120px;
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
+    height: 120px;
+    box-sizing: border-box;
     align-items: center;
     margin-bottom: 30px;
     background: $background-color-icon-wrapper;
@@ -44,6 +41,7 @@
     font-weight: $font-weight-2;
     font-size: $font-size-default;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $text-color-secondary;
@@ -53,5 +51,28 @@
     font-size: $font-size-default;
     line-height: 1.71;
     letter-spacing: 0.03em;
+  }
+
+  @include media(">tablet") {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item:first-child {
+      margin-left: 0;
+    }
+
+    &__item {
+      margin-left: 30px;
+      // width: 270px;
+    }
+
+    &__item-title {
+      text-align: left;
+    }
+  }
+
+  @include media(">desktop") {
   }
 }

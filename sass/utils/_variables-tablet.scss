@@ -1,0 +1,113 @@
+  //------------------------------------------------ Global
+  // Container
+  $t-container-max-width: 738px;
+
+  // Fonts
+  $t-font-size-0: 12px;
+  $t-font-size-default: 14px;
+  $t-font-size-2: 16px;
+  $t-font-size-3: 18px;
+
+  $t-font-weight-default: 400;
+  $t-font-weight-1: 500;
+  $t-font-weight-2: 700;
+  $t-font-weight-3: 900;
+
+  // Text color
+  $t-text-color-primary: #757575;
+  $t-text-color-secondary: #212121;
+  $t-text-color-third: #fff;
+  $t-font-family: Roboto, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+
+  // Background colors
+  $t-background-color-page-primary: #fff;
+  $t-background-color-page-secondary: #2f303a;
+
+  // SVG background colors
+  $t-svg-icon-background-color: #afb1b8;
+
+  // ------------------------------------------------ Components
+
+  // Button
+  $t-btn-text-color: #fff;
+  $t-btn-background-color: #2196f3;
+  $t-btn-background-color-hover: #2196f3c8;
+
+  // Card
+  $t-card-background-color: #fff;
+
+  // Social icons
+  $t-social-icons-ellipse-background-color: #fff;
+  $t-social-icons-ellipse-background-color-grey: rgba(255, 255, 255, 0.1);
+  $t-social-icons-ellipse-text-color-white: #fff;
+
+  // Validation colors
+  $t-invalid-color: #f00;
+
+  // ------------------------------------------------ Modules
+  // Logo
+  $t-logo-second-text-part-color-header: #000;
+  $t-logo-font-size: 26px;
+
+  // Logo footer
+  $t-logo-second-text-part-color-footer: #fff;
+
+  // Navigation
+  $t-navigation-border-color: #ececec;
+
+  // Order section
+  $t-order-title-text-color: #fff;
+  $t-order-btn-background-color-span-hover: #0372f1;
+
+  // Quality section
+  $t-background-color-icon-wrapper: #f5f4fa;
+
+  // Ourskills section
+  $t-background-color-ourskills-text: #2f303acc;
+
+  // Team section
+  // $t-address-text-color-footer: #fff;
+  $t-background-color-team-section: #f5f4fa;
+
+  // Best Clients section
+  $t-best-cliets-section-primary-color: #afb1b8;
+
+  // Footer
+  $t-address-link-color: rgba(255, 255, 255, 0.6);
+  $t-address-link-color-secondary: #fff;
+  $t-subscribe-section-input-color: rgba(255, 255, 255, 0.6);
+  $t-subscribe-section-input-border-color: rgba(255, 255, 255, 0.3);
+  $t-subscribe-section-icon-color: #fff;
+
+  // Modal-order
+  $t-modal-form-title-text-size: 20px;
+  $t-modal-bg-color: rgba(0, 0, 0, 0.2);
+  $t-modal-input-border-color: rgba(33, 33, 33, 0.2);
+  $t-modal-comment-area-border-color: rgba(33, 33, 33, 0.2);
+  $t-modal-comment-area-placeholder-color: rgba(117, 117, 117, 0.5);
+  $t-modal-checkbox-outline-color: rgba(255, 99, 71, 0.5);
+  $t-checkbox-icon-custom-border-color: #000;
+  $t-modal-policy-icon-h: 15px;
+  $t-modal-policy-icon-w: 16px;
+
+  // ------------------------------------------------ Portfolio //////////
+  // Filter section
+  $t-filter-btn-text-color: #000;
+  $t-filter-btn-text-color-active: #fff;
+  $t-filter-btn-bg-color: #f5f4fa;
+
+  // Templations section
+  $t-template-item-background-color: #fff;
+  $t-template-item-border-color: #eee;
+  $t-template-item-desc-text-color: rgba(33, 150, 243, 0.9);
+  // ------------------------------------------------ Portfolio //////////
+
+  /* Animation */
+  $t-anim-duration: 0.25s;
+  $t-anim-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // Accent
+  $t-accent-color: #2196f3;
+
+

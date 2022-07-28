@@ -1,0 +1,113 @@
+  //------------------------------------------------ Global
+  // Container
+  $d-container-max-width: 1170px;
+
+  // Fonts
+  $d-font-size-0: 12px;
+  $d-font-size-default: 14px;
+  $d-font-size-2: 16px;
+  $d-font-size-3: 18px;
+
+  $d-font-weight-default: 400;
+  $d-font-weight-1: 500;
+  $d-font-weight-2: 700;
+  $d-font-weight-3: 900;
+
+  // Text color
+  $d-text-color-primary: #757575;
+  $d-text-color-secondary: #212121;
+  $d-text-color-third: #fff;
+  $d-font-family: Roboto, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+
+  // Background colors
+  $d-background-color-page-primary: #fff;
+  $d-background-color-page-secondary: #2f303a;
+
+  // SVG background colors
+  $d-svg-icon-background-color: #afb1b8;
+
+  // ------------------------------------------------ Components
+
+  // Button
+  $d-btn-text-color: #fff;
+  $d-btn-background-color: #2196f3;
+  $d-btn-background-color-hover: #2196f3c8;
+
+  // Card
+  $d-card-background-color: #fff;
+
+  // Social icons
+  $d-social-icons-ellipse-background-color: #fff;
+  $d-social-icons-ellipse-background-color-grey: rgba(255, 255, 255, 0.1);
+  $d-social-icons-ellipse-text-color-white: #fff;
+
+  // Validation colors
+  $d-invalid-color: #f00;
+
+  // ------------------------------------------------ Modules
+  // Logo
+  $d-logo-second-text-part-color-header: #000;
+  $d-logo-font-size: 26px;
+
+  // Logo footer
+  $d-logo-second-text-part-color-footer: #fff;
+
+  // Navigation
+  $d-navigation-border-color: #ececec;
+
+  // Order section
+  $d-order-title-text-color: #fff;
+  $d-order-btn-background-color-span-hover: #0372f1;
+
+  // Quality section
+  $d-background-color-icon-wrapper: #f5f4fa;
+
+  // Ourskills section
+  $d-background-color-ourskills-text: #2f303acc;
+
+  // Team section
+  // $d-address-text-color-footer: #fff;
+  $d-background-color-team-section: #f5f4fa;
+
+  // Best Clients section
+  $d-best-cliets-section-primary-color: #afb1b8;
+
+  // Footer
+  $d-address-link-color: rgba(255, 255, 255, 0.6);
+  $d-address-link-color-secondary: #fff;
+  $d-subscribe-section-input-color: rgba(255, 255, 255, 0.6);
+  $d-subscribe-section-input-border-color: rgba(255, 255, 255, 0.3);
+  $d-subscribe-section-icon-color: #fff;
+
+  // Modal-order
+  $d-modal-form-title-text-size: 20px;
+  $d-modal-bg-color: rgba(0, 0, 0, 0.2);
+  $d-modal-input-border-color: rgba(33, 33, 33, 0.2);
+  $d-modal-comment-area-border-color: rgba(33, 33, 33, 0.2);
+  $d-modal-comment-area-placeholder-color: rgba(117, 117, 117, 0.5);
+  $d-modal-checkbox-outline-color: rgba(255, 99, 71, 0.5);
+  $d-checkbox-icon-custom-border-color: #000;
+  $d-modal-policy-icon-h: 15px;
+  $d-modal-policy-icon-w: 16px;
+
+  // ------------------------------------------------ Portfolio //////////
+  // Filter section
+  $d-filter-btn-text-color: #000;
+  $d-filter-btn-text-color-active: #fff;
+  $d-filter-btn-bg-color: #f5f4fa;
+
+  // Templations section
+  $d-template-item-background-color: #fff;
+  $d-template-item-border-color: #eee;
+  $d-template-item-desc-text-color: rgba(33, 150, 243, 0.9);
+  // ------------------------------------------------ Portfolio //////////
+
+  /* Animation */
+  $d-anim-duration: 0.25s;
+  $d-anim-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // Accent
+  $d-accent-color: #2196f3;
+
+

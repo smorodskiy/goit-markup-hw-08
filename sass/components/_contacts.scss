@@ -1,5 +1,5 @@
 .contacts {
-  display: flex;
+  display: none;
   /* dub */
   font-weight: $font-weight-1;
   line-height: 1.14;
@@ -14,7 +14,7 @@
   }
 
   &__link {
-    @extend %header-link-paddings;
+    @extend %header-link-paddings;    
     display: flex;
     align-items: center;
     color: $text-color-primary;
@@ -39,7 +39,6 @@
 // ------ Hover
 
 .contacts {
-  
   &__link:hover,
   &__link:focus {
     color: $accent-color;
@@ -81,5 +80,11 @@
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
   }
 }

@@ -1,7 +1,11 @@
 // Utils
 @import "utils/variables.scss";
+@import "utils/variables-tablet";
+@import "utils/variables-desktop";
+
 @import "utils/extendes.scss";
 @import "utils/utils.scss";
+@import "utils/include-media";
 
 // Base
 @import "base/common";

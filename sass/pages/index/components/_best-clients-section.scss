@@ -10,27 +10,21 @@
   }
 
   &__list {
-    display: flex;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
-  }
-
-  &__item:first-child {
-    margin-left: 0;
   }
 
   &__item {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-
-    width: 170px;
     height: 92px;
-    margin-left: 30px;
-
     border: 1px solid $best-cliets-section-primary-color;
     border-radius: 4px;
-
     cursor: pointer;
   }
 
@@ -49,6 +43,19 @@
     fill: $best-cliets-section-primary-color;
     -webkit-transition: fill $anim-duration $anim-function;
     transition: fill $anim-duration $anim-function;
+  }
+
+  @include media(">tablet") {
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @include media(">desktop") {
+    &__list {
+      display: flex;
+      gap: 30px;
+    }
   }
 }
 

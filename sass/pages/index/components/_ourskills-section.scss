@@ -1,4 +1,5 @@
 .ourskills-section {
+  display: none;
   padding-top: 0;
 
   &__container {
@@ -43,5 +44,12 @@
     text-transform: uppercase;
     color: $text-color-third;
     background: $background-color-ourskills-text;
+  }
+
+  @include media(">tablet") {
+    display: block;
+  }
+
+  @include media(">desktop") {
   }
 }

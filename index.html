@@ -14,12 +14,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-    
     <!-- Шапка -->
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="navigation">
-          
           <!-- Logo -->
           <div class="logo">
             <a class="logo__link" href="/"
@@ -68,12 +66,16 @@
             </a>
           </li>
         </ul>
+
+        <!-- Menu button -->
+        <svg class="page-header__icon-menu" data-menu>
+          <use xlink:href="./images/icons.svg#icon-menu"></use>
+        </svg>
       </div>
     </header>
 
     <main>
       <section class="page-main">
-        
         <!-- Main title -->
         <h1 class="page-main__title is-hidden">Веб-студия по разработке сайтов</h1>
 
@@ -184,13 +186,12 @@
         <!-- Наша команда -->
         <section class="team-section">
           <div class="container team-section__container">
-            
             <!-- Team title -->
             <h2 class="team-section__title">Наша команда</h2>
 
             <!-- Team list -->
             <ul class="team-section__list">
-              <li class="card">
+              <li class="team-section__item card">
                 <img
                   class="card__picture"
                   src="./images/team1.jpg"
@@ -242,7 +243,7 @@
                 </div>
               </li>
 
-              <li class="card">
+              <li class="team-section__item card">
                 <img
                   class="card__picture"
                   src="./images/team2.jpg"
@@ -294,7 +295,7 @@
                 </div>
               </li>
 
-              <li class="card">
+              <li class="team-section__item card">
                 <img
                   class="card__picture"
                   src="./images/team3.jpg"
@@ -345,7 +346,8 @@
                   </ul>
                 </div>
               </li>
-              <li class="card">
+
+              <li class="team-section__item card">
                 <img
                   class="card__picture"
                   src="./images/team4.jpg"
@@ -355,7 +357,7 @@
                 <div class="card__footer">
                   <h3 class="card__name">Михаил Ермаков</h3>
                   <p class="card__text">UI Designer</p>
-                  
+
                   <!-- Social icons -->
                   <ul class="social-icons">
                     <li class="social-icons__item">
@@ -531,22 +533,25 @@
             </li>
           </ul>
         </div>
-        
+
         <!-- Subscribe -->
         <div class="subscribe-section">
           <form action="#">
             <h2 class="subscribe-section__title">Подпишитесь на рассылку</h2>
+            <!-- <div class="subscribe-section__wrapper"> -->
             <input
               class="subscribe-section__input"
               type="email"
               name="email"
               placeholder="E-Mail"
             />
+
             <button class="btn subscribe-section__btn" type="submit">
               Подписаться<svg class="subscribe-section__icon">
                 <use xlink:href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
+            <!-- </div> -->
           </form>
         </div>
       </div>

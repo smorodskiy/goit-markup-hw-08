@@ -4,8 +4,8 @@
 }
 
 %top-bottom-shifting-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 %title-section {
@@ -29,3 +29,13 @@
   text-transform: uppercase;
   color: $text-color-third;
 }
+
+// @include media(">tablet") {
+//   %top-bottom-shifting-section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+// }
+
+// @include media(">desktop") {
+// }
