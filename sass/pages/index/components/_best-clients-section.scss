@@ -53,6 +53,10 @@
   }
 
   @include media(">desktop") {
+    &__title {
+      @include title-section(50px, 36px);
+    }
+
     &__list {
       display: flex;
       gap: 30px;
