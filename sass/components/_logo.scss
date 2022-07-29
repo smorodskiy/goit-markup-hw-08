@@ -29,10 +29,10 @@
 
   @include media(">tablet") {    
     font-size: $t-logo-font-size;
-    line-height: 1.19;
   }
   
   @include media(">desktop") {
-    
+    font-size: $d-logo-font-size;
+    line-height: 1.19;
   }
 }
