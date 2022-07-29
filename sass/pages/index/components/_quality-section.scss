@@ -5,9 +5,6 @@
     @extend %top-bottom-shifting-section;
   }
 
-  &__title {
-  }
-
   &__list {
     display: block;
   }
@@ -53,19 +50,21 @@
     letter-spacing: 0.03em;
   }
 
+  // MEDIA TABLET -------------
   @include media(">tablet") {
     &__list {
       display: flex;
-      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      // justify-content: center;
     }
 
-    &__item:first-child {
-      margin-left: 0;
+    &__item:nth-child(2) {
+      margin-top: 0;
     }
 
     &__item {
-      margin-left: 30px;
-      // width: 270px;
+      width: calc(50% - 15px);
     }
 
     &__item-title {
@@ -73,6 +72,20 @@
     }
   }
 
+  // MEDIA DESKTOP -------------
   @include media(">desktop") {
+    &__list {
+      flex-wrap: nowrap;      
+    }
+
+    &__item:first-child {
+      margin-left: 0;
+    }
+
+    &__item {
+      margin: 0;
+      margin-left: 30px;
+      width: auto;
+    }    
   }
 }
