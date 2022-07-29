@@ -1,0 +1,45 @@
+/*  ----------  Футер  --------------  */
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color-page-secondary;
+
+  &__container {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__social-wrapper-title {
+    @extend %footer-section-title;
+  }
+
+  @include media(">tablet") {
+    &__container {
+      gap: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__social-wrapper {
+      align-self: self-start;
+    }
+  }
+
+  @include media(">desktop") {
+    &__container {
+      align-items: unset;
+      text-align: unset;
+      flex-wrap: nowrap;
+    }
+
+    &__social-wrapper {
+      align-self: center;
+      margin-left: 70px;
+    }
+  }
+}
