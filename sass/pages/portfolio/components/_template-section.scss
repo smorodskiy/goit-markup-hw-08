@@ -70,16 +70,35 @@
   }
 
   @include media(">tablet") {
+    &__list {
+      justify-content: flex-start;
+    }
+
     &__item {
-      // margin: 15px;
+      display: flex;
       max-width: 354px;
-    }   
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__footer {
+      flex-grow: 1;
+    }
   }
 
   @include media(">desktop") {
-    
-  }
+    &__list {
+      justify-content: center;
+    }
 
+    &__item {
+      max-width: 370px;
+    }
+  }
 }
 
 // Hover
