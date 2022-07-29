@@ -35,19 +35,27 @@
     height: 16px;
   }
 
+  // MEDIA TABLET -------------
   @include media(">tablet") {
     display: flex;
     flex-direction: column;
 
     &__link {
       @include header-link-paddings(5px);
+      font-size: 12px;
+    }
+
+    &__item {
+      margin-left: 40px;
     }
   }
 
+  // MEDIA DESKTOP -------------
   @include media(">desktop") {
     flex-direction: row;
     &__link {
       @include header-link-paddings(32px);
+      font-size: 14px;
     }
   }
 }
