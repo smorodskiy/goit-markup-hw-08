@@ -5,11 +5,12 @@
   }
 
   @include media(">tablet") {
-   
   }
 
   @include media(">desktop") {
-    padding-top: 94px;
-    padding-bottom: 94px;  
+    &__container {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 }
