@@ -47,10 +47,18 @@
     background: $background-color-ourskills-text;
   }
 
+  // MEDIA TABLET -------------
   @include media(">tablet") {
-    display: block;
+    
   }
 
-  @include media(">desktop") {
+  // MEDIA DESKTOP -------------
+  @include media(">desktop") {    
+    display: block;
+
+    &__title {
+      @include title-section(50px, 36px);
+    }
+  
   }
 }
