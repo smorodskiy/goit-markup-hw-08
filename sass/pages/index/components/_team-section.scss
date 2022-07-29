@@ -26,17 +26,35 @@
   }
 
   &__item {
-    margin-top: 30px;    
+    margin-top: 30px;
   }
 
   @include media(">tablet") {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
 
+    &__item {
+      width: calc((100% / 2) - 15px);
+      margin: 0;
+    }
   }
 
   @include media(">desktop") {
-    &__list {
-      display: flex;
-      justify-content: space-between;
+    &__title {
+      @include title-section(50px, 36px);
+    }
+
+    // &__list {
+    //   display: flex;
+    //   justify-content: space-between;
+    // }
+
+    &__item {
+      width: auto;     
     }
   }
 }
