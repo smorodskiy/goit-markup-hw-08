@@ -15,6 +15,19 @@
   color: $text-color-third;
 }
 
+%close-button {
+  position: absolute;
+  right: 0;
+  margin: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: $background-color-page-primary;
+  transition: fill $anim-duration $anim-function;
+  cursor: pointer;
+}
+
 // @include media(">tablet") {
 //   %top-bottom-shifting-section {
 //     padding-top: 94px;

@@ -14,7 +14,7 @@
     position: relative;
     top: 50%;
     left: 50%;
-    width: 528px;
+    width: 450px;
     transform: translate(-50%, -50%);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px $modal-bg-color;
@@ -22,17 +22,8 @@
     background-color: $background-color-page-primary;
   }
 
-  &__close-icon {
-    position: absolute;
-    right: 0;
-    margin: 8px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background: $background-color-page-primary;
-    transition: fill $anim-duration $anim-function;
-    cursor: pointer;
+  &__close-button {
+    @extend %close-button;
   }
 
   &__form-wrapper {
@@ -58,11 +49,13 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
   }
+
   &__input-label {
     display: block;
     margin-top: 10px;
     margin-bottom: 4px;
   }
+
   &__input {
     box-sizing: border-box;
     padding-left: 40px;
@@ -73,6 +66,7 @@
     outline: none;
     transition: border $anim-duration $anim-function;
   }
+
   &__input-icon {
     position: absolute;
     top: 58%;
@@ -104,6 +98,7 @@
     align-items: center;
     gap: 8px;
     margin-top: 20px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
@@ -150,13 +145,28 @@
     border: none;
     transition: box-shadow $anim-duration $anim-function;
   }
-}
 
+  // MEDIA TABLET -------------
+  @include media(">tablet") {
+
+  }
+
+  // MEDIA DESKTOP -------------
+  @include media(">desktop") {
+    &__window {
+      width: 528px;
+    }
+
+    &__checkbox-box {
+      font-size: 14px;
+    }
+  }
+}
 
 // Hover
 .modal {
-  // Close icon hover
-  &__close-icon:hover {
+  // Close button hover
+  &__close-button:hover {
     fill: $accent-color;
   }
 
@@ -195,7 +205,7 @@
     content: "";
   }
 
-  // Style checkbox for checked state 
+  // Style checkbox for checked state
   &__checkbox-native:checked + &__checkbox-icon-custom {
     border: 2px solid transparent;
   }

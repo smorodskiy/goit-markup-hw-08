@@ -561,7 +561,7 @@
     <div class="modal is-hidden" data-modal>
       <div class="modal__window">
         <!-- Close button -->
-        <svg class="modal__close-icon" data-modal-close>
+        <svg class="modal__close-button" data-modal-close>
           <use xlink:href="./images/icons.svg#icon-close"></use>
         </svg>
 
@@ -630,8 +630,8 @@
               </span>
 
               <!-- Checkbox text -->
-              Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="modal__checkbox-agree-contract">Условия договора</a>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#" class="modal__checkbox-agree-contract">Умови договору</a>
             </label>
 
             <!-- Send button -->
@@ -641,7 +641,51 @@
       </div>
     </div>
 
+    <!-- Hamburger menu window -->
+    <div class="menu" data-menu>
+
+      <!-- Close button -->
+      <svg class="menu__close-button" data-menu-button>
+        <use xlink:href="./images/icons.svg#icon-close"></use>
+      </svg>
+
+      <ul class="menu__pages">
+        <li class="menu__page"><a class="menu__link" href="./index.html">Студія</a></li>
+        <li class="menu__page"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
+        <li class="menu__page"><a class="menu__link" href="./contacts.html">Контакти</a></li>
+      </ul>
+
+      <div class="menu__bootom-wrapper">
+        <ul class="menu__contacts">
+          <li class="menu__contact">
+            <a class="menu__link" href="tel:380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__contact">
+            <a class="menu__link" href="mailto:info@example.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="menu__social-links">
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://instagram.com/smorodsky">Instagram</a>
+          </li>
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://twitter.com/smorodskiy">Twitter</a>
+          </li>
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://facebook.com/smorodsky">Facebook</a>
+          </li>
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://linkedin.com/in/igor-smorodskiy">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Modal window for orders -->
     <script src="./js/modal.js"></script>
+
+    <!-- Hamburger menu -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
