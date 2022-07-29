@@ -1,7 +1,7 @@
 /* Filter section */
 
 .filter {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 
   &__list {
     display: flex;
@@ -10,7 +10,7 @@
   }
 
   &__item {
-    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 8px;
   }
 
@@ -79,7 +79,7 @@
   }
 
   @include media(">tablet") {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 
     &__list {
       justify-content: center;
@@ -95,6 +95,7 @@
   }
 
   @include media(">desktop") {
+    margin-bottom: 35px;
   }
 }
 
