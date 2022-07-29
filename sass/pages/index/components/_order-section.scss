@@ -59,13 +59,14 @@
   }
 
   @include media(">tablet") {
+
+  }
+
+  @include media(">desktop") {
     &__title {
       font-size: 44px;
       line-height: 1.36;
     }
-  }
-
-  @include media(">desktop") {
   }
 }
 
