@@ -4,7 +4,7 @@
 
   &__pages {
     display: none;
-    
+
     margin-left: 93px;
     /* dub */
     font-weight: $font-weight-1;
@@ -37,6 +37,13 @@
     border-radius: 2px;
     background-color: $accent-color;
     content: "";
+  }
+
+  @include media(">tablet") {
+    &__pages {
+      display: flex;
+      margin-left: 79px;
+    }
   }
 }
 
@@ -74,23 +81,12 @@
   }
 }
 
-
 // @media screen and (min-width: 768px) {
 
 //   .navigation {
-//     &__pages {    
+//     &__pages {
 //       display: flex;
-//     }    
+//     }
 //   }
 
 // }
-
-@include media(">tablet") {
-
-  .navigation {
-    &__pages {    
-      display: flex;
-    }    
-  }
-
-}
