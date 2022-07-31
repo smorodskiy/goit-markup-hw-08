@@ -1,17 +1,17 @@
 .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 40px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  background-color: #fffa;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 40px;
+  
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    background-color: #fff;
+    z-index: 100;
 
   &__close-button {
     @extend %close-button;
