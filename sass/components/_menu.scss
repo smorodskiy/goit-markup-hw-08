@@ -1,24 +1,42 @@
 .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 40px;
-  
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-  
-    background-color: #fff;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 40px;
+  // visibility: hidden;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 100;
 
-  &__close-button {
+  &.is-open {
+    display: flex;
+    // visibility: visible;
+    // transition: all $anim-duration $anim-function;
+  }
+
+  // &__close-button {
+  //   display: inline-flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin: 0;
+  //   padding: 0;
+  //   width: 40px;
+  //   height: 40px;
+  //   border: none;
+  //   background-color: transparent;
+  //   cursor: pointer;
+  // }
+
+  &__icon-close {
     @extend %close-button;
     margin: 21px;
+    top: 0;
     transform: scale(2);
     border: none;
-    top: 0;
   }
 
   &__pages {
@@ -27,6 +45,10 @@
     line-height: 47px;
     letter-spacing: 0.02em;
     color: $text-color-secondary;
+  }
+
+  &__page--active-page {
+    color: $accent-color;
   }
 
   &__contact,
@@ -60,6 +82,7 @@
 
   &__social-links {
     display: flex;
+    flex-wrap: wrap;
     font-size: 18px;
     line-height: 22px;
     color: $accent-color;
@@ -84,16 +107,17 @@
   &__link {
     color: inherit;
     cursor: pointer;
+    transition: padding $anim-duration $anim-function, color $anim-duration $anim-function;
   }
 }
 
 // Hover
 .menu {
   // Close button hover
-  &__close-button:hover {
+  &__icon-close:hover {
     fill: $accent-color;
   }
-
+  
   &__page:hover &__link {
     padding-left: 5px;
     color: $accent-color;

@@ -10,9 +10,23 @@
     justify-content: space-between;
   }
 
+  &__menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
   &__icon-menu {
     width: 24px;
     height: 16px;
+    transition: fill $anim-duration $anim-function;
   }
 
   @include media(">tablet") {    
@@ -21,4 +35,11 @@
     }
   }
 
+}
+
+// Hover
+.page-header {
+  &__menu-button:hover &__icon-menu  {
+    fill: $accent-color;
+  }
 }

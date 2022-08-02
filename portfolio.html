@@ -60,11 +60,13 @@
             </a>
           </li>
         </ul>
-        
+
         <!-- Menu button -->
-        <svg class="page-header__icon-menu" data-menu>
-          <use xlink:href="./images/icons.svg#icon-menu"></use>
-        </svg>
+        <button class="page-header__menu-button" type="button" data-menu-open>
+          <svg class="page-header__icon-menu">
+            <use xlink:href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -114,12 +116,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template1.jpg"
-                      alt="Шаблон Технокряк"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template1@1x.jpg 1x,
+                          ./images/mobile/template1@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template1@1x.jpg 1x,
+                          ./images/desktop/template1@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template1.jpg"
+                        alt="Шаблон Технокряк"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -135,12 +159,33 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template2.jpg"
-                      alt="Шаблон Постер New Orlean vs Golden Star"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template2@1x.jpg 1x,
+                          ./images/mobile/template2@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template2@1x.jpg 1x,
+                          ./images/desktop/template2@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template2.jpg"
+                        alt="Шаблон Постер New Orlean vs Golden Star"
+                        width="370"
+                      />
+                    </picture>
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -156,12 +201,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template3.jpg"
-                      alt="Шаблон Ресторан Seafood"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template3@1x.jpg 1x,
+                          ./images/mobile/template3@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template3@1x.jpg 1x,
+                          ./images/desktop/template3@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template3.jpg"
+                        alt="Шаблон Ресторан Seafood"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -177,12 +244,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template4.jpg"
-                      alt="Шаблон Проект Prime"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template4@1x.jpg 1x,
+                          ./images/mobile/template4@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template4@1x.jpg 1x,
+                          ./images/desktop/template4@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template4.jpg"
+                        alt="Шаблон Проект Prime"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -198,12 +287,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template5.jpg"
-                      alt="Шаблон Проект Boxes"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template5@1x.jpg 1x,
+                          ./images/mobile/template5@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template5@1x.jpg 1x,
+                          ./images/desktop/template5@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template5.jpg"
+                        alt="Шаблон Проект Boxes"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -219,12 +330,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template6.jpg"
-                      alt="Шаблон Inspiration has no Borders"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template6@1x.jpg 1x,
+                          ./images/mobile/template6@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template6@1x.jpg 1x,
+                          ./images/desktop/template6@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template6.jpg"
+                        alt="Шаблон Inspiration has no Borders"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -240,12 +373,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template7.jpg"
-                      alt="Шаблон Издание Limited Edition"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template7@1x.jpg 1x,
+                          ./images/mobile/template7@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template7@1x.jpg 1x,
+                          ./images/desktop/template7@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template7.jpg"
+                        alt="Шаблон Издание Limited Edition"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -261,12 +416,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template8.jpg"
-                      alt="Шаблон Проект LAB"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template8@1x.jpg 1x,
+                          ./images/mobile/template8@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template8@1x.jpg 1x,
+                          ./images/desktop/template8@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template8.jpg"
+                        alt="Шаблон Проект LAB"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -282,12 +459,34 @@
               <li class="template-section__item">
                 <a href="#" class="template-section__link">
                   <div class="template-section__header">
-                    <img
-                      class="template-section__picture"
-                      src="./images/template9.jpg"
-                      alt="Шаблон Growing Business"
-                      width="370"
-                    />
+                    <picture>
+                      <!-- Mobile -->
+                      <source
+                        srcset="
+                          ./images/mobile/template9@1x.jpg 1x,
+                          ./images/mobile/template9@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(max-width: 768px)"
+                      />
+                      <!-- Tablet --><!-- Desktop -->
+                      <source
+                        srcset="
+                          ./images/desktop/template9@1x.jpg 1x,
+                          ./images/desktop/template9@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                        media="(min-width: 768px)"
+                      />
+                      <!-- If does not support -->
+                      <img
+                        class="template-section__picture"
+                        src="./images/template9.jpg"
+                        alt="Шаблон Growing Business"
+                        width="370"
+                      />
+                    </picture>
+
                     <p class="template-section__text-float">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -403,5 +602,52 @@
         </div>
       </div>
     </footer>
+
+    <!-- Hamburger menu window -->
+    <div class="menu" data-menu>
+      <!-- Close button -->
+      <!-- <button class="menu__close-button" type="button" data-menu-close> -->
+      <svg class="menu__icon-close" data-menu-close>
+        <use xlink:href="./images/icons.svg#icon-close"></use>
+      </svg>
+      <!-- </button> -->
+
+      <ul class="menu__pages">
+        <li class="menu__page"><a class="menu__link" href="./index.html">Студія</a></li>
+        <li class="menu__page menu__page--active-page">
+          <a class="menu__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu__page"><a class="menu__link" href="./contacts.html">Контакти</a></li>
+      </ul>
+
+      <div class="menu__bootom-wrapper">
+        <ul class="menu__contacts">
+          <li class="menu__contact">
+            <a class="menu__link" href="tel:380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__contact">
+            <a class="menu__link" href="mailto:info@example.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="menu__social-links">
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://instagram.com/smorodsky">Instagram</a>
+          </li>
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://twitter.com/smorodskiy">Twitter</a>
+          </li>
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://facebook.com/smorodsky">Facebook</a>
+          </li>
+          <li class="menu__social-link">
+            <a class="menu__link" href="http://linkedin.com/in/igor-smorodskiy">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hamburger menu -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -68,9 +68,11 @@
         </ul>
 
         <!-- Menu button -->
-        <svg class="page-header__icon-menu" data-menu-button>
-          <use xlink:href="./images/icons.svg#icon-menu"></use>
-        </svg>
+        <button class="page-header__menu-button" type="button" data-menu-open>
+          <svg class="page-header__icon-menu">
+            <use xlink:href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -153,30 +155,57 @@
 
             <ul class="ourskills-section__list">
               <li class="ourskills-section__item">
-                <img
-                  class="ourskills-section__picture"
-                  src="./images/wedo1.jpg"
-                  alt="Верстка"
-                  width="370"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="./images/wedo1@1x.jpg 1x, ./images/wedo1@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 769px)"
+                  />
+                  <img
+                    class="ourskills-section__picture"
+                    src="./images/wedo1.jpg"
+                    alt="Верстка"
+                    width="370"
+                  />
+                </picture>
+
                 <p class="ourskills-section__text">Десктопные приложения</p>
               </li>
               <li class="ourskills-section__item">
-                <img
-                  class="ourskills-section__picture"
-                  src="./images/wedo2.jpg"
-                  alt="Дизайн"
-                  width="370"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="./images/wedo2@1x.jpg 1x, ./images/wedo2@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 769px)"
+                  />
+                  <img
+                    class="ourskills-section__picture"
+                    src="./images/wedo2.jpg"
+                    alt="Дизайн"
+                    width="370"
+                  />
+                </picture>
+
                 <p class="ourskills-section__text">Мобильные приложения</p>
               </li>
               <li class="ourskills-section__item">
-                <img
-                  class="ourskills-section__picture"
-                  src="./images/wedo3.jpg"
-                  alt="Стиль"
-                  width="370"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    srcset="./images/wedo3@1x.jpg 1x, ./images/wedo3@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 769px)"
+                  />
+                  <img
+                    class="ourskills-section__picture"
+                    src="./images/wedo3.jpg"
+                    alt="Стиль"
+                    width="370"
+                  />
+                </picture>
+
                 <p class="ourskills-section__text">Дизайнерские решения</p>
               </li>
             </ul>
@@ -192,12 +221,34 @@
             <!-- Team list -->
             <ul class="team-section__list">
               <li class="team-section__item card">
-                <img
-                  class="card__picture"
-                  src="./images/team1.jpg"
-                  alt="Фотография сотрудника 1"
-                  width="270"
-                />
+                <picture>
+                  <!-- Mobile -->
+                  <source
+                    srcset="./images/mobile/team1@1x.jpg 1x, ./images/mobile/team1@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="./images/tablet/team1@1x.jpg 1x, ./images/tablet/team1@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px) and (max-width: 1200px)"
+                  />
+                  <!-- Desktop -->
+                  <source
+                    srcset="./images/desktop/team1@1x.jpg 1x, ./images/desktop/team1@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <!-- If does not support -->
+                  <img
+                    class="card__picture"
+                    src="./images/team1.jpg"
+                    alt="Фотография сотрудника 1"
+                    width="270"
+                  />
+                </picture>
+
                 <div class="card__footer">
                   <h3 class="card__name">Игорь Демьяненко</h3>
                   <p class="card__text">Product Designer</p>
@@ -244,12 +295,34 @@
               </li>
 
               <li class="team-section__item card">
-                <img
-                  class="card__picture"
-                  src="./images/team2.jpg"
-                  alt="Фотография сотрудника 2"
-                  width="270"
-                />
+                <picture>
+                  <!-- Mobile -->
+                  <source
+                    srcset="./images/mobile/team2@1x.jpg 1x, ./images/mobile/team2@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="./images/tablet/team2@1x.jpg 1x, ./images/tablet/team2@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px) and (max-width: 1200px)"
+                  />
+                  <!-- Desktop -->
+                  <source
+                    srcset="./images/desktop/team2@1x.jpg 1x, ./images/desktop/team2@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <!-- If does not support -->
+                  <img
+                    class="card__picture"
+                    src="./images/team2.jpg"
+                    alt="Фотография сотрудника 2"
+                    width="270"
+                  />
+                </picture>
+
                 <div class="card__footer">
                   <h3 class="card__name">Ольга Репина</h3>
                   <p class="card__text">Frontend Developer</p>
@@ -296,12 +369,33 @@
               </li>
 
               <li class="team-section__item card">
-                <img
-                  class="card__picture"
-                  src="./images/team3.jpg"
-                  alt="Фотография сотрудника 3"
-                  width="270"
-                />
+                <picture>
+                  <!-- Mobile -->
+                  <source
+                    srcset="./images/mobile/team3@1x.jpg 1x, ./images/mobile/team3@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="./images/tablet/team3@1x.jpg 1x, ./images/tablet/team3@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px) and (max-width: 1200px)"
+                  />
+                  <!-- Desktop -->
+                  <source
+                    srcset="./images/desktop/team3@1x.jpg 1x, ./images/desktop/team3@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <!-- If does not support -->
+                  <img
+                    class="card__picture"
+                    src="./images/team3.jpg"
+                    alt="Фотография сотрудника 2"
+                    width="270"
+                  />
+                </picture>
                 <div class="card__footer">
                   <h3 class="card__name">Николай Тарасов</h3>
                   <p class="card__text">Marketing</p>
@@ -348,12 +442,33 @@
               </li>
 
               <li class="team-section__item card">
-                <img
-                  class="card__picture"
-                  src="./images/team4.jpg"
-                  alt="Фотография сотрудника 4"
-                  width="270"
-                />
+                <picture>
+                  <!-- Mobile -->
+                  <source
+                    srcset="./images/mobile/team4@1x.jpg 1x, ./images/mobile/team4@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- Tablet -->
+                  <source
+                    srcset="./images/tablet/team4@1x.jpg 1x, ./images/tablet/team4@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 768px) and (max-width: 1200px)"
+                  />
+                  <!-- Desktop -->
+                  <source
+                    srcset="./images/desktop/team4@1x.jpg 1x, ./images/desktop/team4@2x.jpg 2x"
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <!-- If does not support -->
+                  <img
+                    class="card__picture"
+                    src="./images/team4.jpg"
+                    alt="Фотография сотрудника 2"
+                    width="270"
+                  />
+                </picture>
                 <div class="card__footer">
                   <h3 class="card__name">Михаил Ермаков</h3>
                   <p class="card__text">UI Designer</p>
@@ -643,14 +758,17 @@
 
     <!-- Hamburger menu window -->
     <div class="menu" data-menu>
-
       <!-- Close button -->
-      <svg class="menu__close-button" data-menu-button>
+      <!-- <button class="menu__close-button" type="button" data-menu-close> -->
+      <svg class="menu__icon-close" data-menu-close>
         <use xlink:href="./images/icons.svg#icon-close"></use>
       </svg>
+      <!-- </button> -->
 
       <ul class="menu__pages">
-        <li class="menu__page"><a class="menu__link" href="./index.html">Студія</a></li>
+        <li class="menu__page menu__page--active-page">
+          <a class="menu__link" href="./index.html">Студія</a>
+        </li>
         <li class="menu__page"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
         <li class="menu__page"><a class="menu__link" href="./contacts.html">Контакти</a></li>
       </ul>

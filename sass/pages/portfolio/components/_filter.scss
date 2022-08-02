@@ -11,15 +11,7 @@
 
   &__item {
     margin-bottom: 15px;
-    margin-left: 8px;
-  }
-
-  &__item:first-child {
-    margin-left: 0;
-  }
-
-  &__item:nth-child(4) {
-    margin-left: 0;
+    margin-right: 8px;
   }
 
   &__btn {
@@ -78,6 +70,7 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
+  // TABLET MEDIA
   @include media(">tablet") {
     margin-bottom: 15px;
 
@@ -94,6 +87,7 @@
     }
   }
 
+// DESKTOP MEDIA
   @include media(">desktop") {
     margin-bottom: 35px;
   }

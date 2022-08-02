@@ -1,8 +1,5 @@
 // Utils
 @import "utils/variables.scss";
-@import "utils/variables-tablet";
-@import "utils/variables-desktop";
-
 @import "utils/extendes.scss";
 @import "utils/mixins";
 @import "utils/utils.scss";
@@ -32,7 +29,7 @@
 @import "pages/index/components/ourskills-section";
 @import "pages/index/components/team-section";
 @import "pages/index/components/best-clients-section";
-@import "pages/index/components/modal-feedback";
+@import "pages/index/components/modal";
 @import "pages/index/components/card";
 
 // Portfolio
